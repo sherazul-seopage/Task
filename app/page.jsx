@@ -58,7 +58,7 @@ if(response.data.data) setApiData([...response.data.data])
 
 
 
-  if(isLoading) return "Loading"
+  
 
   const originalData = useMemo(() => [...data], [data]);
   useEffect(() => {
@@ -106,6 +106,7 @@ if(response.data.data) setApiData([...response.data.data])
 </span>
       </div>
 <TableComponent data={displayedItems} selectedCheckboxes={selectedCheckboxes} />
+{/* <Sample data={displayedItems} selectedCheckboxes={selectedCheckboxes} /> */}
 <Pagination
         currentPage={currentPage}
         itemsPerPage={itemsPerPage}
